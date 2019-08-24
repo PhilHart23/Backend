@@ -12,7 +12,6 @@ exports.up = function(knex, Promise) {
         .notNullable();
 
       users.boolean('admin')
-        .notNullable()
         .defaultTo(false);   
   });
 };

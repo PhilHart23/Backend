@@ -12,8 +12,7 @@ exports.up = function(knex, Promise) {
         tbl.text('story').notNullable();
 
         tbl.boolean('isapproved')
-          .notNullable()
-          .defaultTo(false);
+          .defaultTo(true);
         })
   
 };
