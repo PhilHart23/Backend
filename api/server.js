@@ -21,4 +21,8 @@ server.use('/login', loginRoutes);
 server.use('/submitStory', submitStoryRoutes);
 server.use('/submissions', submissionsRoutes);
 
+server.get("/", (req, res) => {
+    res.send("Welcome to the Refugee Stories API");
+  });
+
 module.exports = server; 
